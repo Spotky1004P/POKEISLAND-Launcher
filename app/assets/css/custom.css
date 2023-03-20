@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../fonts/GmarketSansMedium.otf");
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("../fonts/GmarketSansBold.otf");
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("../fonts/GmarketSansLight.otf");
+}
+
+#loginOptionsContainer {
+  overflow: hidden;
+}
+
+#loginOptions_custom {
+  height: 58vmin;
+  aspect-ratio: 840 / 400;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  background-image: url("../images/custom/로그인\ 사각형\ 12.png");
+  background-size: cover;
+}
+
+#loginOptionMicrosoft {
+  margin-bottom: 7vmin;
+
+  height: 12%;
+  aspect-ratio: 250 / 50;
+
+  background-image: url("../images/custom/로그인\ 버튼.png");
+  background-size: cover;
+  border: none;
+
+  cursor: pointer;
+}
+#loginOptionMicrosoft:hover {
+  filter: brightness(1.2);
+
+  transition: filter 0.15s;
+}
+
+
+
+#landing_custom_header {
+  position: absolute;
+  left: 0;
+  top: -22px;
+
+  width: 100%;
+  height: 15vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #5f8d42;
+}
+#landing_custom_header__content {
+  margin-top: 5vh;
+  position: relative;
+}
+#landing_custom_header__nickname, #landing_custom_header__discord {
+  display: inline-block;
+
+  height: 7.5vh;
+  aspect-ratio: 267 / 57;
+
+  background-size: cover;
+  border: none;
+}
+#landing_custom_header__nickname {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "GmarketSans";
+
+  background-image: url("../images/custom/유저\ 닉네임.png");
+}
+#landing_custom_header__nickname * {
+  position: absolute;
+}
+#landing_custom_header__discord {
+  background-image: url("../images/custom/디스코드\ 링크.png");
+
+  cursor: pointer;
+}
+#landing_custom_header__profile {
+  position: absolute;
+  bottom: 1.1vh;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 10vh;
+  height: 10vh;
+
+  filter: drop-shadow(0.5vh 1vh 0.4vh #0008);
+}
+#avatarContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#landingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#landing_custom_main {
+  margin-top: 3vmin;
+  height: 58vmin;
+  aspect-ratio: 850 / 410;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  background-image: url("../images/custom/메인\ 사각형\ 1.png");
+  background-size: cover;
+}
+
+#launch_button {
+  margin-bottom: 8vmin;
+
+  height: 14.5%;
+  aspect-ratio: 250 / 57;
+
+  background-image: url("../images/custom/게임\ 시작\ 버튼.png");
+  background-size: cover;
+  border: none;
+
+  cursor: pointer;
+}
+#launch_button:hover {
+  filter: brightness(1.2);
+
+  transition: filter 0.15s;
+}
+
+#landing_custom_after {
+  margin-top: 3vmin;
+  height: 58vmin;
+  aspect-ratio: 850 / 410;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  background-image: url("../images/custom/로딩\ 사각형\ 1.png");
+  background-size: cover;
+}
+
+#launch_progress_wrapper {
+  width: 100%;
+  margin-bottom: 10vmin;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  border: none;
+}
+
+#launch_progress[value] {
+  height: 1.3vmin;
+  width: 50% !important;
+  margin-right: 3vmin;
+
+  -webkit-appearance: none;
+}
+#launch_progress[value]::-webkit-progress-bar {
+  background-color: #02a1f9;
+  border-radius: 100vh;
+}
+#launch_progress[value]::-webkit-progress-value {
+  background-color: #29f19c;
+  border-radius: 100vh;
+}
+
+#launch_progress_label {
+  width: 3vw !important;
+
+  font-family: "GmarketSans";
+  font-size: 3vmin;
+  text-align: right;
+  color: #5c806e;
+}
+#launch_progress_symbol {
+  font-family: "GmarketSans";
+  font-size: 1.2vmin;
+  color: #5c806e;
+}
+
+#settingsMediaButton {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../images/custom/설정.png");
+  background-size: cover;
+
+  cursor: pointer;
+}
